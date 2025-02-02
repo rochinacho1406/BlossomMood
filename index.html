@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlossomMood</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen">
+            <h1>Welcome to BlossomMood</h1>
+            <p>
+                Welcome to BlossomMood, where your emotions help a flower grow! 
+                Life is a garden of emotions, and every feeling you experience plays a part in nurturing something beautiful. 
+                At BlossomMood, we’ve created a unique way to track your moods by connecting them to the growth of a virtual flower. 
+                Each day, as you log your emotions, your flower will bloom, wilt, or grow stronger, reflecting your inner world. 
+                Whether you’re feeling joyful, calm, or even a little down, your flower will be there to remind you that every emotion is part of your personal growth journey. 
+                Start nurturing your flower today and watch as your emotional garden flourishes!
+            </p>
+
+            <!-- Team Members Section -->
+            <div class="team-members">
+                <h2>Our Team</h2>
+                <div>1. Roshnitha Rojesh - <strong>ADS</strong></div>
+                <div>2. Athulya K - <strong>CSE</strong></div>
+                <div>3. Anshwaramol P - <strong>ADS</strong></div>
+            </div>
+
+            <button onclick="startTracking()">Track My Mood, Let's Go!</button>
+        </div>
+
+        <!-- Mood Tracking Screen -->
+        <div id="mood-screen" class="hidden">
+            <h2>How are you feeling today?</h2>
+            <div class="day-counter" id="day-counter">Day 1</div>
+            <div class="emoji-container">
+                <span class="emoji" onclick="selectMood('😢')">😢</span>
+                <span class="emoji" onclick="selectMood('😠')">😠</span>
+                <span class="emoji" onclick="selectMood('😐')">😐</span>
+                <span class="emoji" onclick="selectMood('😊')">😊</span>
+                <span class="emoji" onclick="selectMood('😄')">😄</span>
+            </div>
+            <div class="plant-container">
+                <div id="plant" class="plant">🌱</div>
+                <div id="quote" class="quote"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let plantGrowth = 0; // Tracks the growth stage of the plant
+        let dayCount = 1; // Tracks the day count
+        const plantStages = ["🌱", "🌿", "🌳", "🌻"]; // Stages of plant growth
+        const positiveQuotes = [
+            "Every day is a new beginning. Take a deep breath and start again.",
+            "You are capable of amazing things.",
+            "Keep your face always toward the sunshine—and shadows will fall behind you.",
+            "Believe you can, and you're halfway there.",
+            "The best time to plant a tree was 20 years ago. The second best time is now."
+        ];
+        const neutralQuote = "It's okay to feel confused sometimes! Life is a journey, and every emotion is part of it.";
+
+        // Switch to the mood tracking screen
+        function startTracking() {
+            document.getElementById('welcome-screen').classList.add('hidden');
+            document.getElementById('mood-screen').classList.remove('hidden');
+        }
+
+        // Handle mood selection
+        function selectMood(emoji) {
+            const plantElement = document.getElementById('plant');
+            const quoteElement = document.getElementById('quote');
+            const dayCounterElement = document.getElementById('day-counter');
+
+            // Update the day counter
+            dayCounterElement.textContent = `Day ${dayCount}`;
+            dayCount++;
+
+            if (emoji === '😊' || emoji === '😄') {
+                // Positive emoji: grow the plant and show a positive quote
+                plantGrowth = Math.min(plantGrowth + 1, plantStages.length - 1);
+                plantElement.textContent = plantStages[plantGrowth];
+                quoteElement.textContent = positiveQuotes[Math.floor(Math.random() * positiveQuotes.length)];
+            } else if (emoji === '😢' || emoji === '😠') {
+                // Negative emoji: shrink the plant and show a positive quote
+                plantGrowth = Math.max(plantGrowth - 1, 0);
+                plantElement.textContent = plantStages[plantGrowth];
+                quoteElement.textContent = positiveQuotes[Math.floor(Math.random() * positiveQuotes.length)];
+            } else if (emoji === '😐') {
+                // Neutral emoji: no change and show a neutral quote
+                quoteElement.textContent = neutralQuote;
+            }
+
+            // Check if the plant has fully grown or died
+            if (plantGrowth === plantStages.length - 1) {
+                quoteElement.textContent = "Congratulations! Your sunflower has fully bloomed. Keep spreading positivity!";
+            } else if (plantGrowth === 0) {
+                quoteElement.textContent = "Your plant needs some love. Choose a positive mood to help it grow!";
+            }
+        }
+    </script>
+</body>
+</html>

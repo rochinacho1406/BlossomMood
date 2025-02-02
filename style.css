@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #2e8b57;
+}
+
+p {
+    color: #555;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.team-members {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: green;
+}
+
+.team-members div {
+    margin: 10px 0;
+}
+
+.emoji-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.emoji {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.emoji:hover {
+    transform: scale(1.2);
+}
+
+.plant-container {
+    margin-top: 50px;
+}
+
+.plant {
+    font-size: 5rem;
+    transition: transform 0.5s;
+}
+
+.quote {
+    margin-top: 20px;
+    font-style: italic;
+    color: orange;
+    font-size: 2rem; /* Larger font size for quotes */
+}
+
+.day-counter {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: olive;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: olive;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3cb371;
+}
+
+.hidden {
+    display: none; /* Hide elements with this class */
+}
