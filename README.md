@@ -1,49 +1,49 @@
-# [BlossomMood] 🎯
+# BlossomMood 🎯
 
 
 ## Basic Details
-### Team Name: [CODEX]
+### Team Name: CODEX
 
 
 ### Team Members
-- Member 1: [Roshnitha Rojesh] - [Vimal Jyothi Engineering College, Chemperi]
-- Member 2: [Athulya K] - [Vimal Jyothi Engineering College, Chemperi]
-- Member 3: [Anshwaramol P] - [Vimal Jyothi Engineering College, Chemperi]
+- Member 1: Roshnitha Rojesh - Vimal Jyothi Engineering College, Chemperi
+- Member 2: Athulya K - Vimal Jyothi Engineering College, Chemperi
+- Member 3: Anshwaramol P - Vimal Jyothi Engineering College, Chemperi
 
 ### Hosted Project Link
-[https://github.com/rochinacho1406/BlossomMood]
+https://github.com/rochinacho1406/BlossomMood
 
 ### Project Description
-[Track your moods and grow a virtual flower. Your emotions shape its growth—blooming, wilting, or thriving.
+Track your moods and grow a virtual flower. Your emotions shape its growth—blooming, wilting, or thriving.
 Whether joyful, calm, or down, your flower reflects your journey.
-Start nurturing your emotional garden today!]
+Start nurturing your emotional garden today!
 
 ### The Problem statement
-[BlossomMood turns emotional tracking into a rewarding, visual experience,
-promoting mental well-being and personal growth.]
+BlossomMood turns emotional tracking into a rewarding, visual experience,
+promoting mental well-being and personal growth.
 
 ### The Solution
-[BlossomMood supports mental health by helping users become more aware of their emotions through visual representation and positive reinforcement.By providing affirmations when a negative mood is detected, it encourages a shift towards positivity and self care]
+BlossomMood supports mental health by helping users become more aware of their emotions through visual representation and positive reinforcement.By providing affirmations when a negative mood is detected, it encourages a shift towards positivity and self care
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [HTML]
-- [CSS]
-- [JAVASCRIPT]
-- [VSCODE]
+- HTML
+- CSS
+- JAVASCRIPT
+- VSCODE
 
 For Hardware:
-- [Dell Inspiron]
-- [(Intel Core i5, 8GB RAM, 512GB SSD)]
-- [Code Editor/IDE: Visual Studio Code
-Web Browser: Google Chrome, Firefox (for testing)]
+- Dell Inspiron
+- Windows 11
+- Code Editor/IDE: Visual Studio Code
+Web Browser: Google Chrome, Firefox (for testing)
 
 ### Implementation
 For Software:
 # Installation
-[git clone https://github.com/your-username/BlossomMood.git
-cd BlossomMood]
+git clone https://github.com/your-username/BlossomMood.git
+cd BlossomMood
 
 # Run
 Open your project folder in VS Code.
@@ -62,16 +62,8 @@ For Software:BlossomMood/
 The image shows the welcome UI of our website.
 
 # Build Photos
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-
+CODEX TEAM
+![WhatsApp Image 2025-02-02 at 11 13 02 AM (2)](https://github.com/user-attachments/assets/d78a41bd-fa76-49b8-9a18-01faeba867f4)
 
 ---
 Made with ❤️ at TinkerHub
